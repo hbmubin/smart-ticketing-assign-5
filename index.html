@@ -1,11 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smart Ticketing</title>
+    <!-- DAISY UI & TAILWIND CSS LINK -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONT AWESOME CDN LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CUSTOM CSS -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+      body {
+        font-family: "Raleway", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    
+    <!-- HEADER START -->
+    <header>
+      <div class="md:container md:mx-auto">
+        <!-- NAV START -->
+        <div class="navbar bg-base-100 pt-9 pb-8">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a class="text-lg font-medium">Home</a></li>
+                <li><a class="text-lg font-medium">About</a></li>
+                <li><a class="text-lg font-medium">Destination</a></li>
+                <li><a class="text-lg font-medium">Search</a></li>
+                <a class="btn">Bus</a>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-4xl font-extrabold">E-Ticket</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-lg font-medium">Home</a></li>
+              <li><a class="text-lg font-medium">About</a></li>
+              <li>
+                <a class="text-lg font-medium">Destination</a>
+              </li>
+              <li><a class="text-lg font-medium">Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="btn text-xl font-bold text-green-500 bg-green-100 border-[1px] border-green-300"
+              >Bus<span><img src="images/bus-icon.png" /></span
+            ></a>
+          </div>
+        </div>
+        <!-- NAV END -->
+        <!-- HERO START -->
+        <div
+          class="hero h-[550px] rounded-[32px] overflow-hidden"
+          style="background-image: url(images/banner.png)"
+        >
+          <div class=""></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="w-[742px]">
+              <h1 class="mb-5 text-5xl font-bold leading-[86px]">
+                End-to-End Travel with <br /><span class="text-green-500"
+                  >South Paribahan</span
+                >
+              </h1>
+              <p class="mb-5">
+                Yes, you can run unit tests and view the results directly within
+                the app. The integrated testing features allow for a streamlined
+                .
+              </p>
+              <button
+                class="btn btn-primary bg-green-500 border-none text-xl hover:bg-green-400"
+              >
+                Buy Ticket
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- HERO END -->
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <main></main>
+    <footer></footer>
   </body>
 </html>
