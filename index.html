@@ -184,7 +184,7 @@
               Best offers for you
             </h2>
           </div>
-          <div class="cupon-container flex justify-between">
+          <div class="coupon-container flex justify-between">
             <div
               class="h-[220px] w-[573px] flex justify-between items-center"
               style="background-image: url(images/Group\ 115.png)"
@@ -197,7 +197,7 @@
               <div class="mr-14 text-center">
                 <h1 class="text-3xl font-bold">NEW15</h1>
                 <p class="mt-2 text-xl text-slate-500 font-normal">
-                  Cupon code
+                  coupon code
                 </p>
               </div>
             </div>
@@ -211,9 +211,9 @@
                 <p class="text-slate-600 font-medium">use by March 2024</p>
               </div>
               <div class="mr-14 text-center">
-                <h1 class="text-3xl font-bold">Cuple 20</h1>
+                <h1 class="text-3xl font-bold">Couple 20</h1>
                 <p class="mt-2 text-xl text-slate-500 font-normal">
-                  Cupon code
+                  coupon code
                 </p>
               </div>
             </div>
@@ -411,44 +411,68 @@
                   <h2>Total Price</h2>
                   <h2>BDT <span id="total-price">0</span></h2>
                 </div>
-                <div class="cupon-input-container flex mt-4 mb-6 gap-2">
+                <div id="coupon-input-container" class="flex mt-4 mb-6 gap-2">
                   <input
+                    id="coupon-input"
                     class="flex-1 rounded-lg pl-6"
                     type="text"
-                    placeholder="Have any cupon?"
-                  /><button class="btn bg-green-500 text-white">Apply</button>
+                    placeholder="Have any coupon?"
+                  /><button
+                    id="coupon-btn"
+                    onclick="couponBtn()"
+                    class="btn bg-green-500 text-white"
+                  >
+                    Apply
+                  </button>
                 </div>
                 <div
-                  class="discount-container flex justify-between font-medium text-lg mb-6"
+                  id="coupon-success-container"
+                  class="hidden text-center my-4"
+                >
+                  <h2
+                    class="bg-green-400 py-3 px-5 inline-block text-white text-lg font-medium rounded-2xl"
+                  >
+                    Coupon successfully applied
+                  </h2>
+                </div>
+                <div
+                  id="discount-container"
+                  class="hidden flex justify-between font-medium text-lg mb-6"
                 >
                   <h2>Discounted</h2>
-                  <h2>BDT <span>0</span></h2>
+                  <h2>BDT <span id="discounted">0</span></h2>
                 </div>
                 <div
                   class="grandTotal-container flex justify-between font-medium text-lg"
                 >
                   <h2>Grand Price</h2>
-                  <h2>BDT <span>0</span></h2>
+                  <h2>BDT <span id="grand-total">0</span></h2>
                 </div>
               </div>
               <form class="ticket-form inter flex flex-col">
                 <div>
                   <label class="block" for="">Passenger Name<sup>*</sup></label>
-                  <input type="text" placeholder="Enter your Name" />
+                  <input type="text" placeholder="Enter your name" />
                 </div>
                 <div>
                   <label class="block" for="">Phone Number<sup>*</sup></label>
-                  <input type="number" placeholder="Enter your Name" />
+                  <input
+                    id="phone-number"
+                    type="number"
+                    placeholder="Enter your phone number"
+                  />
                 </div>
                 <div>
                   <label class="block" for="">Email ID</label>
-                  <input type="email" placeholder="Enter your Name" />
+                  <input type="email" placeholder="Enter your email id" />
                 </div>
-                <a
-                  href="confirmation/confirmation.html"
-                  class="btn h-16 rounded-lg bg-green-500 text-white"
-                  >Next</a
+                <button
+                  id="next-btn"
+                  class="w-full btn h-16 rounded-lg bg-green-500 text-white relative"
                 >
+                  Next
+                  <a class="w-full h-full absolute" href="confirmation/confirmation.html"></a>
+                </button>
               </form>
               <div class="flex justify-around inter mt-4 text-slate-500">
                 <h2 class="underline">Terms and Conditions</h2>
