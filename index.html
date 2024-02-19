@@ -150,8 +150,8 @@
         >
           <div class=""></div>
           <div class="hero-content text-center text-neutral-content">
-            <div class="w-[742px]">
-              <h1 class="mb-5 text-5xl font-bold leading-[86px]">
+            <div class="md:w-[742px]">
+              <h1 class="mb-5 text-5xl font-bold md:leading-[86px]">
                 End-to-End Travel with <br /><span class="text-green-500"
                   >South Paribahan</span
                 >
@@ -184,9 +184,11 @@
               Best offers for you
             </h2>
           </div>
-          <div class="coupon-container flex justify-between">
+          <div
+            class="coupon-container flex md:flex-row flex-col md:justify-between gap-10"
+          >
             <div
-              class="h-[220px] w-[573px] flex justify-between items-center"
+              class="h-[220px] md:w-[573px] flex justify-between items-center rounded-3xl"
               style="background-image: url(images/Group\ 115.png)"
             >
               <div class="ml-14 inter">
@@ -202,7 +204,7 @@
               </div>
             </div>
             <div
-              class="h-[220px] w-[573px] flex justify-between items-center"
+              class="h-[220px] md:w-[573px] flex justify-between items-center rounded-3xl"
               style="background-image: url(images/output-onlinepngtools.png)"
             >
               <div class="ml-14 inter">
@@ -234,15 +236,15 @@
         <div class="md:container md:mx-auto">
           <div class="ticket-title text-center mt-36 mb-12">
             <h1 class="text-[40px] font-bold">South Paribahan</h1>
-            <p class="w-[736px] mx-auto mt-6 text-lg text-slate-600">
+            <p class="md:w-[736px] w-4/5 mx-auto mt-6 text-lg text-slate-600">
               Yes, you can run unit tests and view the results directly within
               the app. The integrated testing features allow for a streamlined .
             </p>
           </div>
           <div
-            class="ticket-info bg-white flex justify-between items-center rounded-xl"
+            class="ticket-info bg-white flex justify-between items-center rounded-xl flex-1"
           >
-            <div class="info-left p-8 line-r pr-24 border-r-green-400">
+            <div class="info-left p-8 line-r md:pr-24 border-r-green-400">
               <div class="info-title flex justify-between">
                 <div class="bus-name items-center flex gap-4">
                   <div><img src="images/bus-logo.png" /></div>
@@ -254,9 +256,12 @@
                   </div>
                 </div>
                 <div class="seat-left inter">
-                  <button class="btn text-lg text-green-500 bg-green-100">
+                  <button
+                    class="font-semibold py-4 px-5 rounded-xl flex md:flex-row flex-col items-center text-lg text-green-500 bg-green-100"
+                  >
                     <span><img src="images/seat-green.png" /></span>
-                    <span id="seat-left">40 </span>Seat left
+                    <span class="md:mr-3 md:ml-1" id="seat-left">40 </span>Seat
+                    left
                   </button>
                 </div>
               </div>
@@ -274,25 +279,27 @@
 
                 <div class="flex gap-8">
                   <div
-                    class="w-60 h-14 bg-slate-100 rounded-xl flex items-center justify-center font-semibold text-slate-700"
+                    class="md:w-60 h-14 bg-slate-100 rounded-xl flex items-center justify-center font-semibold text-slate-700"
                   >
                     Boarding Point - Laxmipur
                   </div>
                   <div
-                    class="w-60 h-14 bg-slate-100 rounded-xl flex items-center justify-center font-semibold text-slate-700"
+                    class="md:w-60 h-14 bg-slate-100 rounded-xl flex items-center justify-center font-semibold text-slate-700"
                   >
                     Dropping Point - Bogura
                   </div>
                   <div
-                    class="w-60 h-14 bg-slate-100 rounded-xl flex items-center justify-center font-semibold text-slate-700"
+                    class="md:w-60 h-14 bg-slate-100 rounded-xl flex items-center justify-center font-semibold text-slate-700"
                   >
                     Est. Time - 11 Hour
                   </div>
                 </div>
               </div>
             </div>
-            <div class="info-right mr-16 text-center">
-              <div><img src="images/fare.png" /></div>
+            <div class="info-right md:mr-16 px-3 text-center">
+              <div class="flex justify-center">
+                <img src="images/fare.png" />
+              </div>
               <h2 class="text-4xl font-extrabold mt-8 mb-6">550 Taka</h2>
               <p class="text-xl text-slate-500 font-semibold">Per Seat</p>
             </div>
@@ -303,7 +310,7 @@
       <!-- BOOKING START -->
       <section class="bg-slate-50 pt-7">
         <div class="md:container md:mx-auto">
-          <div class="booking-container bg-white rounded-xl flex">
+          <div class="booking-container bg-white rounded-xl md:flex">
             <div class="booking-left p-8">
               <div class="booking-left-top">
                 <h2 class="font-semibold text-2xl">Select Your Seat</h2>
@@ -471,7 +478,10 @@
                   class="w-full btn h-16 rounded-lg bg-green-500 text-white relative"
                 >
                   Next
-                  <a class="w-full h-full absolute" href="confirmation/confirmation.html"></a>
+                  <a
+                    class="w-full h-full absolute"
+                    href="confirmation/confirmation.html"
+                  ></a>
                 </button>
               </form>
               <div class="flex justify-around inter mt-4 text-slate-500">
