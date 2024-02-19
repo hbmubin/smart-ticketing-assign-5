@@ -57,6 +57,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        color: #7d7d7d;
       }
       .serial div {
         height: 56px;
@@ -160,11 +161,12 @@
                 the app. The integrated testing features allow for a streamlined
                 .
               </p>
-              <button
+              <a
+                href="#paribahan-ticket"
                 class="btn btn-primary bg-green-500 border-none text-xl hover:bg-green-400 text-black font-bold"
               >
                 Buy Ticket
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -226,6 +228,7 @@
       <!-- OFFER END -->
       <!-- TICKET START -->
       <section
+        id="paribahan-ticket"
         class="bg-slate-50 rounded-t-[100px] border-t-2 border-green-400"
       >
         <div class="md:container md:mx-auto">
@@ -253,7 +256,7 @@
                 <div class="seat-left inter">
                   <button class="btn text-lg text-green-500 bg-green-100">
                     <span><img src="images/seat-green.png" /></span>
-                    <span>40 </span>Seat left
+                    <span id="seat-left">40 </span>Seat left
                   </button>
                 </div>
               </div>
@@ -318,7 +321,7 @@
                 <div class="seat-driver"><img src="images/Vector.png" /></div>
               </div>
               <div class="booking-left-seats flex inter">
-                <div class="serial grid grid-cols-1 gap-12">
+                <div class="serial grid grid-cols-1 gap-12 text-slate-500">
                   <div>A</div>
                   <div>B</div>
                   <div>C</div>
@@ -330,50 +333,50 @@
                   <div>I</div>
                   <div>J</div>
                 </div>
-                <div class="seats-container flex gap-24">
+                <div id="seats-container" class="seats-container flex gap-24">
                   <div class="seats-left grid grid-cols-2 gap-12">
-                    <div class="seat">A1</div>
-                    <div class="seat">A2</div>
-                    <div class="seat">B1</div>
-                    <div class="seat">B2</div>
-                    <div class="seat">C1</div>
-                    <div class="seat">C2</div>
-                    <div class="seat">D1</div>
-                    <div class="seat">D2</div>
-                    <div class="seat">E1</div>
-                    <div class="seat">E2</div>
-                    <div class="seat">F1</div>
-                    <div class="seat">F2</div>
-                    <div class="seat">G1</div>
-                    <div class="seat">G2</div>
-                    <div class="seat">H1</div>
-                    <div class="seat">H2</div>
-                    <div class="seat">I1</div>
-                    <div class="seat">I2</div>
-                    <div class="seat">J1</div>
-                    <div class="seat">J2</div>
+                    <div id="A1" class="seat btn">A1</div>
+                    <div id="A2" class="seat btn">A2</div>
+                    <div id="B1" class="seat btn">B1</div>
+                    <div id="B2" class="seat btn">B2</div>
+                    <div id="C1" class="seat btn">C1</div>
+                    <div id="C2" class="seat btn">C2</div>
+                    <div id="D1" class="seat btn">D1</div>
+                    <div id="D2" class="seat btn">D2</div>
+                    <div id="E1" class="seat btn">E1</div>
+                    <div id="E2" class="seat btn">E2</div>
+                    <div id="F1" class="seat btn">F1</div>
+                    <div id="F2" class="seat btn">F2</div>
+                    <div id="G1" class="seat btn">G1</div>
+                    <div id="G2" class="seat btn">G2</div>
+                    <div id="H1" class="seat btn">H1</div>
+                    <div id="H2" class="seat btn">H2</div>
+                    <div id="I1" class="seat btn">I1</div>
+                    <div id="I2" class="seat btn">I2</div>
+                    <div id="J1" class="seat btn">J1</div>
+                    <div id="J2" class="seat btn">J2</div>
                   </div>
-                  <div class="seats-right grid grid-cols-2 gap-8">
-                    <div class="seat">A3</div>
-                    <div class="seat">A4</div>
-                    <div class="seat">B3</div>
-                    <div class="seat">B4</div>
-                    <div class="seat">C3</div>
-                    <div class="seat">C4</div>
-                    <div class="seat">D3</div>
-                    <div class="seat">D4</div>
-                    <div class="seat">E3</div>
-                    <div class="seat">E4</div>
-                    <div class="seat">F3</div>
-                    <div class="seat">F4</div>
-                    <div class="seat">G3</div>
-                    <div class="seat">G4</div>
-                    <div class="seat">H3</div>
-                    <div class="seat">H4</div>
-                    <div class="seat">I3</div>
-                    <div class="seat">I4</div>
-                    <div class="seat">J3</div>
-                    <div class="seat">J4</div>
+                  <div class="seats-right grid grid-cols-2 gap-12">
+                    <div id="A3" class="seat btn">A3</div>
+                    <div id="A4" class="seat btn">A4</div>
+                    <div id="B3" class="seat btn">B3</div>
+                    <div id="B4" class="seat btn">B4</div>
+                    <div id="C3" class="seat btn">C3</div>
+                    <div id="C4" class="seat btn">C4</div>
+                    <div id="D3" class="seat btn">D3</div>
+                    <div id="D4" class="seat btn">D4</div>
+                    <div id="E3" class="seat btn">E3</div>
+                    <div id="E4" class="seat btn">E4</div>
+                    <div id="F3" class="seat btn">F3</div>
+                    <div id="F4" class="seat btn">F4</div>
+                    <div id="G3" class="seat btn">G3</div>
+                    <div id="G4" class="seat btn">G4</div>
+                    <div id="H3" class="seat btn">H3</div>
+                    <div id="H4" class="seat btn">H4</div>
+                    <div id="I3" class="seat btn">I3</div>
+                    <div id="I4" class="seat btn">I4</div>
+                    <div id="J3" class="seat btn">J3</div>
+                    <div id="J4" class="seat btn">J4</div>
                   </div>
                 </div>
               </div>
@@ -391,6 +394,7 @@
                   <div class="">
                     Seat
                     <sup
+                      id="seat-count-number"
                       class="badge text-[10px] w-5 h-4 bg-green-500 text-white"
                       >0</sup
                     >
@@ -399,29 +403,13 @@
                   <div>Price</div>
                 </div>
                 <div class="selected-seat-container">
-                  <ul class="selected-seat-ul">
-                    <li>
-                      <div>C2</div>
-                      <div>Economy</div>
-                      <div>550</div>
-                    </li>
-                    <li>
-                      <div>C2</div>
-                      <div>Economy</div>
-                      <div>550</div>
-                    </li>
-                    <li>
-                      <div>C2</div>
-                      <div>Economy</div>
-                      <div>550</div>
-                    </li>
-                  </ul>
+                  <ul id="selected-seat-ul" class="selected-seat-ul"></ul>
                 </div>
                 <div
                   class="total-price-container flex justify-between font-medium text-lg pt-4"
                 >
                   <h2>Total Price</h2>
-                  <h2>BDT <span>0</span></h2>
+                  <h2>BDT <span id="total-price">0</span></h2>
                 </div>
                 <div class="cupon-input-container flex mt-4 mb-6 gap-2">
                   <input
@@ -456,7 +444,11 @@
                   <label class="block" for="">Email ID</label>
                   <input type="email" placeholder="Enter your Name" />
                 </div>
-                <button class="btn h-16 rounded-lg bg-green-500 text-white">Next</button>
+                <a
+                  href="confirmation/confirmation.html"
+                  class="btn h-16 rounded-lg bg-green-500 text-white"
+                  >Next</a
+                >
               </form>
               <div class="flex justify-around inter mt-4 text-slate-500">
                 <h2 class="underline">Terms and Conditions</h2>
@@ -469,5 +461,6 @@
       <!-- BOOKING END -->
     </main>
     <footer></footer>
+    <script src="script/ticketing.js"></script>
   </body>
 </html>
